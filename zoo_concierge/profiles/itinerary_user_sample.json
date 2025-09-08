@@ -1,0 +1,122 @@
+{
+  "state": {
+    "user_profile": {
+      "member_id": "V1001",
+      "name": "Lopez Family",
+      "group_details": {
+        "adults": 2,
+        "children": 2,
+        "seniors": 1,
+        "accessibility_needs": ["wheelchair_access"]
+      },
+      "visit_details": {
+        "date": "2025-09-07",
+        "visit_duration_hours": 6,
+        "preferred_pace": "relaxed",
+        "meal_plan": "on_site",
+        "arrival_time": "10:00 AM"
+      },
+      "interests": {
+        "favorite_animals": ["penguins", "elephants", "giraffes"],
+        "themes": ["feeding times", "educational shows", "family-friendly activities"],
+        "preferred_experience": "multi-generational"
+      },
+      "recommendations": {
+        "exhibits": [
+          {
+            "name": "Arctic Coast Exhibit",
+            "animal_focus": ["penguins", "polar bears"],
+            "description": "Cold-climate animals with underwater viewing tunnels."
+          },
+          {
+            "name": "Savanna Plains",
+            "animal_focus": ["giraffes", "zebras", "lions"],
+            "description": "Expansive grassland habitat with a giraffe feeding deck."
+          }
+        ],
+        "events": [
+          {
+            "name": "Penguin Feeding",
+            "time": "11:00 AM",
+            "location": "Arctic Coast"
+          },
+          {
+            "name": "Elephant Training Demo",
+            "time": "2:00 PM",
+            "location": "Elephant Yard"
+          }
+        ],
+        "activities": [
+          {
+            "name": "Behind-the-Scenes Giraffe Tour",
+            "time": "3:30 PM",
+            "duration": "45 minutes",
+            "requires_booking": true
+          },
+          {
+            "name": "Children’s Play Zone",
+            "time": "All Day",
+            "requires_booking": false
+          }
+        ]
+      }
+    },
+    "current_weather": {
+      "location": "Raleigh, North Carolina",
+      "temperature": "75°F",
+      "conditions": "Partly cloudy",
+      "forecast": "Isolated thunderstorms in the afternoon",
+      "alerts": []
+    },
+    "itinerary": {
+      "version": 1,
+      "last_updated": "2025-09-01T14:30:00Z",
+      "start_date": "2025-09-07",
+      "start_time": "10:00 AM",
+      "end_time": "4:00 PM",
+      "stops": [
+        {
+          "time": "10:15 AM",
+          "activity": "Visit the Arctic Coast Exhibit – penguins and polar bears"
+        },
+        {
+          "time": "11:00 AM",
+          "activity": "Penguin Feeding at Arctic Coast"
+        },
+        {
+          "time": "12:30 PM",
+          "activity": "Lunch break at Safari Café (wheelchair accessible seating)"
+        },
+        {
+          "time": "1:15 PM",
+          "activity": "Savanna Plains Exhibit – giraffes and lions"
+        },
+        {
+          "time": "2:00 PM",
+          "activity": "Elephant Training Demo"
+        },
+        {
+          "time": "3:30 PM",
+          "activity": "Behind-the-Scenes Giraffe Tour"
+        }
+      ]
+    },
+    "bookings": [
+      {
+        "booking_id": "B2025-001",
+        "activity": "Behind-the-Scenes Giraffe Tour",
+        "time": "3:30 PM",
+        "duration": "45 minutes",
+        "status": "confirmed",
+        "notes": "Meet at Savanna Plains entrance 10 minutes early."
+      },
+      {
+        "booking_id": "B2025-002",
+        "activity": "Wheelchair Rental",
+        "time": "10:00 AM",
+        "status": "confirmed",
+        "notes": "Pick up at Guest Services near the main entrance."
+      }
+    ]
+  }
+}
