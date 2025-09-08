@@ -1,10 +1,19 @@
-# Harmony City Zoo Park Concierge Agent
+# Harmony City Zoo Park AI Agents
+
+<img width="453" height="350" alt="Screenshot 2025-09-08 at 4 45 48 PM" src="https://github.com/user-attachments/assets/584c6fb3-c1c9-40db-9290-00c732951f71" />
+<br><br>
+
+[Harmony City Zoo Park](https://github.com/lynnaloo/harmony-zoo) is a free, community-supported zoo outside of Raleigh, NC. Due to its unique exhibits and interactive activities, the zoo attracts thousands of visitors each week. 
+
+The zoo’s growing popularity and commitment to personalized guest experiences make technical innovation essential — an the rise of AI Agents for the zoo.
+
+## Zoo Concierge Agent
 
 This agent serves as a helpful and friendly zoo employee that helps visitors from their first inspiration, through planning and booking. It also considers the most current list of exhibits, events, and activities and how the visit could be affected by weather and unexpected closures.
 
-## Agent Details
+### Agent Details
 
-This agent was build using Google's Agent Development Kit
+This agent was built using [Google's Agent Development Kit](https://google.github.io/adk-docs/)
 
 ### Agent Architecture
 
@@ -16,11 +25,12 @@ TBD
     * `inspiration_agent` - interacts with the visitor to suggest exhibits, activities, events, and answer dining questions.
     * `planning_agent` - Given a user information and preferences, it will then generate an itinerary containing the activities.
     * `booking_agent` - Given an itinerary, the booking agent will help reserve tickets and book activities and events.
+    * `animal_facts_agent` -  interacts with the visitors to answer questions about animals at the zoo.
     
 *   **Tools:**
     * `memorize` - a function to memorize information from the dialog that are important planning.
 *   **AgentTools:**  
-    * `weatyer_grounding` - used to return weather for a given visit day so it can help with planning.
+    * `weather_grounding` - used to return weather for a given visit day so it can help with planning.
     * `zoo_data_grounding` - provides data on exhibits, activities, events, and dining options.
    
 *   **Memory:** 
