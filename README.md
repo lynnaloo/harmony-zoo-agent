@@ -27,8 +27,6 @@ TBD
     * `booking_agent` - Given an itinerary, the booking agent will help reserve tickets and book activities and events.
     * `animal_facts_agent` -  interacts with the visitors to answer questions about animals at the zoo.
     
-*   **Tools:**
-    * `memorize` - a function to memorize information from the dialog that are important planning.
 *   **AgentTools:**  
     * `weather_grounding` - used to return weather for a given visit day so it can help with planning.
     * `zoo_data_grounding` - provides data on exhibits, activities, events, and dining options.
@@ -47,6 +45,7 @@ TBD
 - Google Cloud Vertex AI Search Instance
 - Google Agent Development Kit 1.0+
 - Poetry: Install Poetry by following the instructions on the official Poetry [website](https://python-poetry.org/docs/)
+- Upload documents from `docs` folder to Cloud Storage and create indexes in Vertex AI Search [Quickstart](https://cloud.google.com/vertex-ai/docs/vector-search/quickstart)
 
 ### Installation
 
@@ -74,6 +73,7 @@ TBD
     - At the top directory `zoo-agent/`, make a `.env` by copying `.env.example`
     - Set the following environment variables.
     - To use Vertex, make sure you have the Vertex AI API enabled in your project.
+    
     ```
     # Choose Model Backend: 0 -> ML Dev, 1 -> Vertex
     GOOGLE_GENAI_USE_VERTEXAI=1
@@ -86,7 +86,6 @@ TBD
 
     # GCS Storage Bucket name
     GOOGLE_CLOUD_STORAGE_BUCKET=YOUR_BUCKET_NAME_HERE
-
     ```
 
 4. Authenticate your GCloud account.
