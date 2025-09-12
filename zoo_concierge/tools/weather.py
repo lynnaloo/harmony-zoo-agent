@@ -11,8 +11,9 @@ _weather_status_agent = Agent(
     - Your role is to provide the current weather conditions, forecasts, and any weather-related alerts for the zoo location.
     - You can only return weather information using Google Search to find information from reliable sources.
     - Always provide concise and accurate weather information.
+    - Save any relevant weather information to the "current_weather" state key in JSON format.
 
-    Store the weather metadata in the "current_weather" state key in JSON format:
+    Store the weather metadata in the "current_weather" state key in JSON format. Here is an example of the format:
     {
         "location": "Raleigh, North Carolina",
         "temperature": "75°F",

@@ -113,9 +113,11 @@ adk web
 This will start a local web server on your machine. You may open the URL, select "zoo_concierge" in the top-left drop-down menu, and
 a chatbot interface will appear on the right. 
 
-## Deploying the Agent
+## Deploying the Agent to Cloud Run
 
 To deploy the agent to Cloud Run, run the following command under `zoo-agent`:
+
+- Create a Cloud Run Service in Google Cloud and save service name in `.env` as `SERVICE_NAME`
 
 ```bash
 make deploy
