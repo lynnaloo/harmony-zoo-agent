@@ -23,7 +23,7 @@ This agent was built using [Google's Agent Development Kit](https://google.githu
 
 ### Agent Architecture
 
-<img width="950" src="https://github.com/user-attachments/assets/d662a66a-0f9e-48b9-9f6c-1a87cfb8fded" />
+<img width="950" alt="Screenshot 2025-09-12 at 11 53 33 AM" src="https://github.com/user-attachments/assets/8b008806-df69-48bb-88ff-b95a3196a729" />
 
 ### Component Details
 
