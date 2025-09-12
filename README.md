@@ -31,7 +31,8 @@ This agent was built using [Google's Agent Development Kit](https://google.githu
     * `inspiration_agent` - interacts with the visitor to suggest exhibits, activities, events, and answer dining questions.
     * `planning_agent` - Given a user information and preferences, it will then generate an itinerary containing the activities.
     * `booking_agent` - Given an itinerary, the booking agent will help reserve tickets and book activities and events.
-    * `animal_facts_agent` -  interacts with the visitors to answer questions about animals at the zoo.
+    * `animal_facts_agent` -  interacts with the visitors to answer questions about animals at the zoo. (future)
+    * `salesforce_integration_agent` - associates visitors with contacts and completes bookings (future)
     
 *   **AgentTools:**  
     * `weather_grounding` - used to return weather for a given visit day so it can help with planning.
