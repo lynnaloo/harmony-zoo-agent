@@ -17,7 +17,7 @@ This agent was built using [Google's Agent Development Kit](https://google.githu
 
 ### Agent Architecture
 
-TBD
+<img width="950" src="https://github.com/user-attachments/assets/d662a66a-0f9e-48b9-9f6c-1a87cfb8fded" />
 
 ### Component Details
 
