@@ -1,11 +1,17 @@
 # Harmony City Zoo Park AI Agents
 
-<img width="453" height="350" alt="Screenshot 2025-09-08 at 4 45 48 PM" src="https://github.com/user-attachments/assets/584c6fb3-c1c9-40db-9290-00c732951f71" />
-<br><br>
+https://github.com/user-attachments/assets/30a29c2a-68e0-4278-b4ae-d13e5cd44f3d
+
+<br>
 
 [Harmony City Zoo Park](https://github.com/lynnaloo/harmony-zoo) is a free, community-supported zoo outside of Raleigh, NC. Due to its unique exhibits and interactive activities, the zoo attracts thousands of visitors each week. 
 
 The zoo’s growing popularity and commitment to personalized guest experiences make technical innovation essential — an the rise of AI Agents for the zoo.
+
+<br>
+
+<img width="453" height="350" alt="Screenshot 2025-09-08 at 4 45 48 PM" src="https://github.com/user-attachments/assets/584c6fb3-c1c9-40db-9290-00c732951f71" />
+<br><br>
 
 ## Zoo Concierge Agent
 
