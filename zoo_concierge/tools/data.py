@@ -11,6 +11,9 @@ DATASTORE_ID = os.getenv(
  "DATASTORE_ID"
 )
 
+if not DATASTORE_ID:
+    raise ValueError("DATASTORE_ID environment variable is not set. Please set it in .env")
+
 _zoo_data_agent = Agent(
     model="gemini-2.5-flash",
     name="zoo_data_agent",

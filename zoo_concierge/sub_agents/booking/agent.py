@@ -3,7 +3,7 @@
 from google.adk.agents import Agent
 from google.adk.tools.agent_tool import AgentTool
 from google.genai.types import GenerateContentConfig
-from zoo_concierge.tools.memory import memorize
+from zoo_concierge.tools.memory import memorize, save_bookings
 
 from zoo_concierge.sub_agents.booking import prompt
 
@@ -13,7 +13,8 @@ booking_agent = Agent(
     description="Given an itinerary, completes the reservation of tickets and event/activity bookings.",
     instruction=prompt.BOOKING_AGENT_INSTR,
     tools=[
-        memorize
+        memorize,
+        save_bookings
     ],
     generate_content_config=GenerateContentConfig(
         temperature=0.0, top_p=0.5

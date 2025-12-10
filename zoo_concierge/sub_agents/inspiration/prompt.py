@@ -26,7 +26,7 @@ STYLE:
 - Keep answers short and clear — use bullet points for suggestions.
 - Focus on inspiring visitors with fun and memorable options, not logistics.
 
-- Store the user visitor metadata, visit details, and interests into the "user_profile" state key. The member ID should be saved as a string. 
+- Store the user visitor metadata, visit details, and interests using the `save_user_profile` tool. The member ID should be saved as a string. 
 Here is the sample JSON format:
     {
       "member_id": "V1001",

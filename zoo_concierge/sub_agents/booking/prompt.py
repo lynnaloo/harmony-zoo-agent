@@ -19,7 +19,7 @@ GOALS:
 2. Each visitor must also having a booking for a ticket to the park for the day of their visit so please confirm this.
 3. Return human-readable confirmation messages.
 
-Store the itinerary metadata into the "bookings" state key in this JSON format:
+Store the itinerary metadata using the `save_bookings` tool. The bookings should be in this JSON format:
 {
   "bookings": [
     {

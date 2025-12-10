@@ -50,7 +50,7 @@ This agent was built using [Google's Agent Development Kit](https://google.githu
 - Google Cloud Project (for Vertex AI integration)
 - Google CLoud Storage Bucket
 - Google Cloud Vertex AI Search Instance
-- Google Agent Development Kit 1.0+
+- Google Agent Development Kit CLI (`adk`): Install via `pip install google-adk`
 - Poetry: Install Poetry by following the instructions on the official Poetry [website](https://python-poetry.org/docs/)
 - Upload documents from `docs` folder to Cloud Storage and create indexes in Vertex AI Search [Quickstart](https://cloud.google.com/vertex-ai/docs/vector-search/quickstart)
 
@@ -63,7 +63,20 @@ This agent was built using [Google's Agent Development Kit](https://google.githu
     cd harmony-city-zoo-agent
     ```
 
-2.  Install dependencies using Poetry or pip:
+2.  Create and activate a virtual environment:
+
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+
+3.  Install Poetry:
+
+    ```bash
+    pip install poetry
+    ```
+
+4.  Install dependencies:
 
     **Note for Linux users:** If you get an error related to `keyring` during the installation, you can disable it by running the following command:
     ```bash
@@ -74,10 +87,10 @@ This agent was built using [Google's Agent Development Kit](https://google.githu
     poetry install
     ```
 
-3.  Set up Google Cloud credentials:
+5.  Set up Google Cloud credentials:
 
     Otherwise:
-    - At the top directory `zoo-agent/`, make a `.env` by copying `.env.example`
+    - At the top directory `harmony-zoo-agent/`, make a `.env` by copying `.env.example`
     - Set the following environment variables.
     - To use Vertex, make sure you have the Vertex AI API enabled in your project.
     
@@ -95,15 +108,14 @@ This agent was built using [Google's Agent Development Kit](https://google.githu
     GOOGLE_CLOUD_STORAGE_BUCKET=YOUR_BUCKET_NAME_HERE
     ```
 
-4. Authenticate your GCloud account.
+6. Authenticate your GCloud account.
     ```bash
     gcloud auth application-default login
     ```
 
-5. Activate the virtual environment set up by Poetry, run:
+7. Activate the virtual environment:
     ```bash
-    eval $(poetry env activate)
-    (zoo-agent-py3.12) $ # Virtualenv entered
+    source .venv/bin/activate
     ```
     Repeat this command whenever you have a new shell, before running the commands in this README.
 

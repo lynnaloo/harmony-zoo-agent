@@ -29,7 +29,8 @@ def memorize_list(key: str, value: str, tool_context: ToolContext):
     return {"status": f'Stored "{key}": "{value}"'}
 
 
-def memorize(key: str, value: str, tool_context: ToolContext):
+
+def memorize(key: str, value: Any, tool_context: ToolContext):
     """
     Memorize pieces of information, one key-value pair at a time.
 
@@ -44,6 +45,54 @@ def memorize(key: str, value: str, tool_context: ToolContext):
     mem_dict = tool_context.state
     mem_dict[key] = value
     return {"status": f'Stored "{key}": "{value}"'}
+
+
+def save_itinerary(itinerary: dict, tool_context: ToolContext):
+    """
+    Save the created itinerary to memory.
+
+    Args:
+        itinerary: The itinerary object to store.
+        tool_context: The ADK tool context.
+
+    Returns:
+        A status message.
+    """
+    mem_dict = tool_context.state
+    mem_dict["itinerary"] = itinerary
+    return {"status": "Itinerary saved successfully."}
+
+
+def save_user_profile(user_profile: dict, tool_context: ToolContext):
+    """
+    Save the user profile and preferences to memory.
+
+    Args:
+        user_profile: The user profile object to store.
+        tool_context: The ADK tool context.
+
+    Returns:
+        A status message.
+    """
+    mem_dict = tool_context.state
+    mem_dict["user_profile"] = user_profile
+    return {"status": "User profile saved successfully."}
+
+
+def save_bookings(bookings: dict, tool_context: ToolContext):
+    """
+    Save the confirmed bookings to memory.
+
+    Args:
+        bookings: The bookings object to store.
+        tool_context: The ADK tool context.
+
+    Returns:
+        A status message.
+    """
+    mem_dict = tool_context.state
+    mem_dict["bookings"] = bookings
+    return {"status": "Bookings saved successfully."}
 
 
 def _set_initial_states(source: Dict[str, Any], target: State | dict[str, Any]):

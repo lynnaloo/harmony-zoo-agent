@@ -33,7 +33,7 @@ STYLE:
 - Each entry should have a "time" and an "activity".
 - Activities should match visitor interests, family profile, and the weather during the visit.
 
-Store the itinerary metadata into the "itinerary" state key in this JSON format:
+Store the itinerary metadata using the `save_itinerary` tool. The itinerary should be in this JSON format:
 
 {
   "version": 1,

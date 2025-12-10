@@ -4,7 +4,7 @@ from google.adk.agents import Agent
 from google.adk.tools.agent_tool import AgentTool
 from google.genai.types import GenerateContentConfig
 from zoo_concierge.sub_agents.planning import prompt
-from zoo_concierge.tools.memory import memorize
+from zoo_concierge.tools.memory import memorize, save_itinerary
 from zoo_concierge.tools.weather import weather_grounding
 from zoo_concierge.tools.data import zoo_data_grounding
 
@@ -15,6 +15,7 @@ planning_agent = Agent(
     instruction=prompt.PLANNING_AGENT_INSTR,
     tools=[
         memorize,
+        save_itinerary,
         zoo_data_grounding,
         weather_grounding
     ],
